@@ -1,0 +1,196 @@
+/* Global Reset & Defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding-bottom: 50px;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #2c3e50;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 14px 20px;
+    list-style: none;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px 14px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #34495e;
+}
+
+/* Section Headers */
+h2 {
+    color: #2c3e50;
+    font-size: 26px;
+    margin: 30px 20px 10px;
+}
+
+/* Ordered List */
+ol {
+    margin: 10px 40px;
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+/* Image Styling */
+img {
+    display: block;
+    margin: 20px auto;
+    border: 5px solid #34495e;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 600px;
+}
+
+/* Table Styling */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 14px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #2980b9;
+    color: white;
+    font-size: 16px;
+}
+
+/* Form Container */
+form {
+    width: 90%;
+    max-width: 600px;
+    margin: 30px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#registration-header {
+    text-align: center;
+    color: #e74c3c;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* For Radio and Checkbox */
+input[type="radio"], input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+/* Button Styling */
+button {
+    background-color: #27ae60;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2ecc71;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    table, form, img {
+        width: 95%;
+    }
+
+    h2 {
+        text-align: center;
+        margin: 25px 10px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        padding: 10px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+
+    th, td {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    label, input, select {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 12px;
+    }
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
